@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P13 — Flexbox vs Grid</title>
+  <link rel="stylesheet" href="p13.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Choosing between Flexbox and Grid</h1>
+    <p>Compare one-dimensional and two-dimensional layouts.</p>
+  </header>
+
+  <main>
+
+    <section class="content-card">
+      <h2>Flexbox</h2>
+      <p>Flexbox lays items out in one direction, either in a row or in a column.</p>
+      <div class="flex-demo">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </section>
+
+    <section class="content-card">
+      <h2>Grid</h2>
+      <p>Grid lays items out in rows and columns at the same time.</p>
+      <div class="grid-demo">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </section>
+
+    <section class="content-card">
+      <h2>Which one should I use?</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>Flexbox</th>
+          <th>Grid</th>
+        </tr>
+        <tr>
+          <td>Layout</td>
+          <td>One direction</td>
+          <td>Rows and columns</td>
+        </tr>
+        <tr>
+          <td>Best for</td>
+          <td>Navbars, buttons, small groups of items</td>
+          <td>Whole page layouts, card grids</td>
+        </tr>
+        <tr>
+          <td>Main code</td>
+          <td>display: flex;</td>
+          <td>display: grid;</td>
+        </tr>
+      </table>
+      <p>Use Flexbox for a single line of items. Use Grid when you need rows and columns. You can also use both on the same page.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Web Development Lab · P13</p>
+  </footer>
+
+</body>
+</html>

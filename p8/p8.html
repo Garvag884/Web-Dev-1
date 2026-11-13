@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P8 — Sticky navbar and card overlay using CSS positioning</title>
+  <link rel="stylesheet" href="p8.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Sticky navbar and card overlay using CSS positioning</h1>
+    <p>Use position: sticky and positioned card overlays.</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="#sticky">Sticky navbar</a>
+    <a href="#cards">Card overlay</a>
+  </nav>
+
+  <main>
+
+    <section id="sticky" class="content-card">
+      <h2>Sticky navbar</h2>
+      <p>The menu above stays at the top when you scroll. It uses <code>position: sticky</code> and <code>top: 0</code>.</p>
+    </section>
+
+    <section id="cards" class="content-card">
+      <h2>Card overlay</h2>
+      <p>Hover over a card to see its overlay.</p>
+
+      <div class="cards">
+        <div class="card">
+          <span class="badge">New</span>
+          <h3>Relative</h3>
+          <p>Stays in place and holds the absolute items.</p>
+          <div class="overlay">position: relative</div>
+        </div>
+
+        <div class="card">
+          <span class="badge">Popular</span>
+          <h3>Absolute</h3>
+          <p>Is placed inside its relative parent.</p>
+          <div class="overlay">position: absolute</div>
+        </div>
+
+        <div class="card">
+          <span class="badge">Useful</span>
+          <h3>Sticky</h3>
+          <p>Sticks to the top when you scroll.</p>
+          <div class="overlay">position: sticky</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Web Development Lab · P8</p>
+  </footer>
+
+</body>
+</html>

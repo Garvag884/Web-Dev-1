@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P9 — Responsive navbar and card grid using Flexbox</title>
+  <link rel="stylesheet" href="p9.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Responsive navbar and card grid using Flexbox</h1>
+    <p>Use Flexbox and media queries to make navigation and cards responsive.</p>
+  </header>
+
+  <nav class="navbar">
+    <span class="logo">MySite</span>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#cards">Cards</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="home" class="content-card">
+      <h2>Home</h2>
+      <p>Make the window narrower. The menu and the cards below change to fit the screen.</p>
+    </section>
+
+    <section id="cards" class="content-card">
+      <h2>Cards</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Card one</h3>
+          <p>Cards sit side by side on wide screens.</p>
+        </div>
+        <div class="card">
+          <h3>Card two</h3>
+          <p>They wrap onto a new line on medium screens.</p>
+        </div>
+        <div class="card">
+          <h3>Card three</h3>
+          <p>They stack in one column on phones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-card">
+      <h2>Contact</h2>
+      <p>Email: you@example.com</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Web Development Lab · P9</p>
+  </footer>
+
+</body>
+</html>
